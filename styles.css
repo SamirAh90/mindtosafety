@@ -97,6 +97,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; }
 .profile-caption { color: var(--muted); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; }
 .quote { max-width: 880px; margin: 52px auto 0; padding-top: 39px; border-top: 1px solid var(--line); font-family: var(--font-display); font-size: 32px; line-height: 1.38; text-align: center; }
 .quote cite { display: block; margin-top: 20px; color: var(--gold); font-family: var(--font-sans); font-size: 9px; font-style: normal; letter-spacing: 2px; text-transform: uppercase; }
+.client-band { padding: 50px 0 54px; border-top: 1px solid var(--line); background: var(--surface); text-align: center; }
+.client-heading { margin: 10px 0 28px; font-family: var(--font-display); font-size: clamp(26px, 3vw, 36px); font-weight: 400; }
+.client-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 0; margin: 0; padding: 0; color: var(--muted); font-size: 14px; letter-spacing: .3px; list-style: none; }
+.client-list li { display: inline-flex; align-items: center; }
+.client-list li + li::before { margin: 0 15px; color: var(--gold); content: "·"; }
 .contact-band { padding: 76px 0; border-top: 1px solid var(--line); background: var(--surface-raised); }
 .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 42px; }
 .contact-inner .section-title { margin-bottom: 10px; }
@@ -219,6 +224,11 @@ textarea.field-input { min-height: 138px; resize: vertical; }
   .service-item p { min-height: 0; margin-bottom: 10px; font-size: 15px; line-height: 1.75; }
   .profile-panel { min-height: 250px; padding: 28px; }
   .quote { margin-top: 38px; padding-top: 30px; font-size: 27px; }
+  .client-band { padding: 42px 0 46px; }
+  .client-heading { margin-bottom: 24px; }
+  .client-list { display: grid; gap: 10px; }
+  .client-list li { justify-content: center; }
+  .client-list li + li::before { margin-right: 12px; margin-left: 0; }
   .contact-band { padding: 54px 0; }
   .contact-inner { align-items: flex-start; flex-direction: column; gap: 20px; }
   .footer-inner { grid-template-columns: 1fr; gap: 34px; }
