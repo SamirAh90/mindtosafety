@@ -40,7 +40,20 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 - Rensat tillfälliga förhandsvisningar och bildkopior samt tagit bort bilden till den borttagna utbildningen ”Utmana ert arbetslag”.
 - Kontrollerat att alla kvarvarande bilder används och att hemsidans länkar fungerar.
 
-**Status:** Ändringarna är pushade till GitHub. Hemsidans automatiska publicering behövde rättas och körs igen.
+**Status:** Ändringarna är pushade till GitHub och publicerade på [hemsidan](https://samirah90.github.io/mindtosafety/) den 27 november 2026.
+
+## 2026-11-27 – Publicering klar och kontrollerad
+
+- Alla godkända texter, bilder, borttagningar och den rättade numreringen finns nu på GitHub och på den publicerade hemsidan.
+- Tillfälliga förhandsvisningar och bildkopior är rensade. Ändringsjournalen och bilderna som används på hemsidan är kvar.
+- Kontrollerade den publika startsidan: de nya texterna visas och de borttagna avsnitten är borta.
+- Kontrollerade den publika tjänstesidan: sju tjänster återstår, den nya workshoptexten visas och säkerhetsrådgivning är numrerad 07.
+
+**Kontroll:** GitHubs [publiceringskörning](https://github.com/SamirAh90/mindtosafety/actions/runs/46006109694) för commit `72ce0f4` lyckades. Startsidan och tjänstesidan kontrollerades därefter direkt på den publika adressen. Journalens status uppdaterades efter dessa kontroller.
+
+**Berörd fil:** `ANDRINGSJOURNAL.md`.
+
+**Status:** Publicerat och verifierat. Journaluppdateringen sparas också på GitHub.
 
 ## 2026-11-27 – Rättade den automatiska publiceringen
 
