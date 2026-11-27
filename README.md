@@ -1,10 +1,10 @@
 # mindtosafety
 
-Static website for Mind to Safety, made with HTML, CSS, and a small browser script for the mobile menu and contact email draft. There is no app runtime, package manager, build step, or backend.
+Static website for Mind to Safety with seven training and advisory services, made with HTML, CSS, and a small browser script for the mobile menu. There is no app runtime, package manager, build step, or backend.
 
 ## Preview locally
 
-Open `index.html` in a browser. The site can also be served by any basic static-file server.
+Serve the project root with a basic static-file server, for example `python -m http.server 8765`, then open `http://localhost:8765/`. Use HTTP for preview so the logo's image mask loads correctly.
 
 ## Publish on GitHub Pages
 
@@ -15,3 +15,7 @@ The contact page provides direct email and telephone links. There is no contact 
 ## Maintain pages and SEO
 
 Each route is a standalone HTML file under its route directory. Keep its title, description, canonical URL, Open Graph values, and sitemap entry aligned when editing routes. Shared visual tokens and responsive styles live in `styles.css`; site imagery and the favicon live in `assets/`. Keep navigation and asset references relative so GitHub Pages project URLs continue to work.
+
+## Change journal
+
+Document changes in Swedish in [ANDRINGSJOURNAL.md](ANDRINGSJOURNAL.md). Keep the customer summary grouped by website section and distinguish prepared changes from confirmed publication.

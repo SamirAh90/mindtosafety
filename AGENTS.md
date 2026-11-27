@@ -1,5 +1,0 @@
-- Keep each public route's semantic HTML and SEO metadata together in its route directory.
-- Keep shared navigation, brand, and service styling consistent across all pages.
-- The contact form prepares an email draft; do not imply a server submission or data storage.
-- Keep visual tokens and responsive styles in `styles.css`, and site imagery in `assets/`.
-- Preserve the existing public paths when adding or reorganizing pages.

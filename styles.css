@@ -34,12 +34,11 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .skip-link:focus { transform: translateY(0); }
 .site-header { position: absolute; z-index: 10; inset: 0 0 auto; min-height: 94px; border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; min-height: 94px; align-items: center; justify-content: space-between; gap: 28px; }
-.brand { display: inline-flex; flex: 0 0 auto; flex-direction: column; line-height: 1.05; }
-.brand-main { font-family: var(--font-display); font-size: 30px; }
-.brand-main span { color: var(--gold); }
-.brand-tag { margin-top: 8px; color: var(--muted); font-size: 8px; letter-spacing: 2.5px; text-transform: uppercase; }
-.brand-with-logo { align-items: center; }
-.brand-logo { width: 260px; height: auto; margin-left: -32px; }
+.brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 12px; line-height: 1.05; }
+/* Isolate the original shield and tint it with the site's shared color tokens. */
+.brand-emblem { display: block; flex: 0 0 48px; width: 48px; height: 58px; background: linear-gradient(to bottom, var(--text) 0 52%, var(--gold) 52% 58%, var(--text) 58% 100%); mask-image: url("./assets/Logo.jpg"); mask-mode: luminance; mask-repeat: no-repeat; mask-size: 174px 58px; mask-position: -20px center; }
+.brand-wordmark { color: var(--text); font-family: var(--font-display); font-size: 30px; font-weight: 400; white-space: nowrap; }
+.brand-wordmark span { color: var(--gold); }
 .site-menu { position: relative; }
 .menu-toggle { display: none; }
 .menu-toggle[hidden], .primary-nav[hidden] { display: none; }
@@ -67,7 +66,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; }
 .hero-description p { margin-bottom: 12px; }
 .hero-description p:last-child { margin-bottom: 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
-.hero-credential { max-width: 600px; margin: 25px 0 0; color: var(--muted); font-size: 11px; letter-spacing: .35px; }
 .hero-audiences { display: flex; flex-wrap: wrap; gap: 0; margin: 39px 0 0; padding: 0; color: var(--muted); font-size: 10px; letter-spacing: .35px; list-style: none; }
 .hero-audiences li + li::before { margin-inline: 13px; color: var(--gold); content: "·"; }
 .section-band { padding: 88px 0; border-top: 1px solid var(--line); }
@@ -82,10 +80,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; }
 .section-heading .section-title { margin-bottom: 0; }
 .section-intro { max-width: 680px; margin-top: 20px; }
 .statement-line { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--gold-light); }
-.process-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; margin: 36px 0 0; padding: 0; list-style: none; }
-.process-step { padding-top: 24px; border-top: 1px solid var(--line); }
-.process-step h3 { margin: 14px 0 12px; font-size: 28px; line-height: 1.15; }
-.process-step .body-copy { margin-bottom: 0; }
 .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; }
 .additional-services { margin-top: 36px; padding-top: 26px; border-top: 1px solid var(--line); }
 .additional-services ul { display: grid; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
@@ -103,11 +97,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; }
 .profile-caption { color: var(--muted); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; }
 .quote { max-width: 880px; margin: 52px auto 0; padding-top: 39px; border-top: 1px solid var(--line); font-family: var(--font-display); font-size: 32px; line-height: 1.38; text-align: center; }
 .quote cite { display: block; margin-top: 20px; color: var(--gold); font-family: var(--font-sans); font-size: 9px; font-style: normal; letter-spacing: 2px; text-transform: uppercase; }
-.client-band { padding: 50px 0 54px; border-top: 1px solid var(--line); background: var(--surface); text-align: center; }
-.client-heading { margin: 10px 0 28px; font-family: var(--font-display); font-size: clamp(26px, 3vw, 36px); font-weight: 400; }
-.client-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 0; margin: 0; padding: 0; color: var(--muted); font-size: 14px; letter-spacing: .3px; list-style: none; }
-.client-list li { display: inline-flex; align-items: center; }
-.client-list li + li::before { margin: 0 15px; color: var(--gold); content: "·"; }
 .contact-band { padding: 76px 0; border-top: 1px solid var(--line); background: var(--surface-raised); }
 .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 42px; }
 .contact-inner .section-title { margin-bottom: 10px; }
@@ -196,9 +185,9 @@ textarea.field-input { min-height: 138px; resize: vertical; }
   .site-width { width: calc(100% - 40px); }
   .site-header, .header-inner { min-height: 80px; }
   .header-inner { gap: 14px; }
-  .brand-main { font-size: 25px; }
-  .brand-tag { font-size: 7px; letter-spacing: 1.8px; }
-  .brand-logo { width: 200px; margin-left: -25px; }
+  .brand { gap: 9px; }
+  .brand-emblem { flex-basis: 40px; width: 40px; height: 48px; mask-size: 144px 48px; mask-position: -16.5px center; }
+  .brand-wordmark { font-size: 25px; }
   .menu-toggle { display: grid; width: 46px; height: 46px; place-items: center; padding: 0; border: 1px solid var(--line); color: var(--text); background: transparent; cursor: pointer; }
   .menu-icon, .menu-icon::before, .menu-icon::after { display: block; width: 19px; height: 1px; background: var(--text); content: ""; transition: transform 160ms ease; }
   .menu-icon { position: relative; }
@@ -228,16 +217,11 @@ textarea.field-input { min-height: 138px; resize: vertical; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; margin-bottom: 24px; }
   .section-heading .section-title { margin-bottom: 0; }
   .text-link { min-height: 42px; font-size: 11px; letter-spacing: .7px; }
-  .services-grid, .process-grid { grid-template-columns: 1fr; gap: 30px; }
+  .services-grid { grid-template-columns: 1fr; gap: 30px; }
   .service-item h3 { min-height: 0; margin: 13px 0 10px; font-size: 30px; }
   .service-item p { min-height: 0; margin-bottom: 10px; font-size: 15px; line-height: 1.75; }
   .profile-panel { min-height: 250px; padding: 28px; }
   .quote { margin-top: 38px; padding-top: 30px; font-size: 27px; }
-  .client-band { padding: 42px 0 46px; }
-  .client-heading { margin-bottom: 24px; }
-  .client-list { display: grid; gap: 10px; }
-  .client-list li { justify-content: center; }
-  .client-list li + li::before { margin-right: 12px; margin-left: 0; }
   .contact-band { padding: 54px 0; }
   .contact-inner { align-items: flex-start; flex-direction: column; gap: 20px; }
   .footer-inner { grid-template-columns: 1fr; gap: 34px; }
