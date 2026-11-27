@@ -40,7 +40,20 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 - Rensat tillfälliga förhandsvisningar och bildkopior samt tagit bort bilden till den borttagna utbildningen ”Utmana ert arbetslag”.
 - Kontrollerat att alla kvarvarande bilder används och att hemsidans länkar fungerar.
 
-**Status:** Ändringarna är färdiga. Publicering till GitHub förbereds.
+**Status:** Ändringarna är pushade till GitHub. Hemsidans automatiska publicering behövde rättas och körs igen.
+
+## 2026-11-27 – Rättade den automatiska publiceringen
+
+- Samtliga webbplatsändringar och filrensningen pushades till GitHub i commit `8a3835e`.
+- Första publiceringen stannade när GitHub inte hittade det nyss uppladdade webbpaketet. Vid omkörningen hittades i stället två paket med samma namn.
+- Delade därför upp uppladdning och publicering i två beroende steg och gav webbpaketen unika namn för varje körningsförsök.
+- Lade till den identitetsbehörighet som GitHub Pages kräver för publicering. Behörigheterna är begränsade till publiceringsjobbet.
+
+**Berörda filer:** `.github/workflows/static.yml` och `ANDRINGSJOURNAL.md`.
+
+**Kontroll:** Granskade felloggarna och GitHubs dokumentation för publiceringssteget. Kontrollerade att publiceringen använder samma paketnamn som uppladdningen och inväntar den.
+
+**Status:** Rättningen förberedd för push och en ny publiceringskörning.
 
 ## 2026-11-27 – Förberedde GitHub-publicering och rensade arbetsfiler
 
@@ -54,7 +67,7 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 
 **Kontroll:** Kontrollerade 151 lokala sid-, ankar-, skript-, stil- och bildreferenser utan fel. Alla kvarvarande bilder används. Kontrollerade att GitHub och den lokala huvudgrenen hade samma utgångsläge före publiceringen.
 
-**Status:** Publicering förbereds. Bekräftat resultat dokumenteras när publiceringen är klar.
+**Status:** Webbplatsändringarna är pushade i commit `8a3835e`. De första två publiceringsförsöken misslyckades; rättningen och resultatet dokumenteras i senare poster ovan.
 
 ## 2026-11-27 – Tog bort Utmana ert arbetslag och rättade numreringen
 
