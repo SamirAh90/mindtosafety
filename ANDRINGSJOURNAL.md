@@ -40,7 +40,7 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 - Förtydligat hur varje sida presenteras i sökresultat och när länkar delas.
 - Angett `https://mindtosafety.se/` som hemsidans huvudadress enligt önskemålet.
 - Förbättrat informationen som hjälper sökmotorer att förstå företaget, Johan och de sju tjänsterna. Uppdaterat sidöversikten för sökmotorer.
-- Lagt till ”Powered by DALADANA” med länk till `https://daladana.se/` längst ned på alla sidor, tillsammans med copyright och integritetslänken.
+- Lagt till ”Built by DALADANA” med länk till `https://daladana.se/` längst ned på alla sidor, tillsammans med copyright och integritetslänken. DALADANA-länken öppnas i en ny flik.
 - Kontrollerat sidfoten på mobil och dator.
 
 ### Städning och publicering
@@ -49,6 +49,17 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 - Kontrollerat att alla kvarvarande bilder används och att hemsidans länkar fungerar.
 
 **Status:** Slutversionen med SEO-förbättringar och DALADANA-länken är pushad till GitHub och publicerad på [GitHub-versionen](https://samirah90.github.io/mindtosafety/). Samtliga fem sidor är kontrollerade. Den valda huvudadressen mindtosafety.se visar fortfarande en annan, äldre webbplats.
+
+## 2026-11-27 – Ändrad DALADANA-text och öppning i ny flik
+
+- Ändrade texten längst ned på alla fem sidor från ”Powered by DALADANA” till ”Built by DALADANA”.
+- DALADANA-länken går till `https://daladana.se/` och öppnas nu i en ny flik. Den har också en tillgänglig etikett som anger detta.
+
+**Berörda filer:** De fem sidornas `index.html` samt `ANDRINGSJOURNAL.md`.
+
+**Kontroll:** Kontrollerade att exakt en DALADANA-länk ändrades per sida och att ändringen inte ger formateringsfel.
+
+**Status:** Sparat för push och automatisk publicering.
 
 ## 2026-11-27 – SEO och DALADANA-länk i slutversionen
 
