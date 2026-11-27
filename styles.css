@@ -112,9 +112,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; }
 .footer-links { display: grid; gap: 10px; margin: 0; padding: 0; color: var(--muted); font-size: 14px; list-style: none; }
 .footer-links a { transition: color 180ms ease; }
 .footer-links a:hover { color: var(--gold-light); }
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 42px; padding-top: 24px; border-top: 1px solid var(--line); }
+.footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin-top: 42px; padding-top: 24px; border-top: 1px solid var(--line); }
 .footer-note { color: var(--muted); font-size: 12px; }
 .footer-legal { color: var(--gold-light); font-size: 12px; letter-spacing: .6px; text-transform: uppercase; }
+.footer-credit { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.footer-credit a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+.footer-credit a:hover { color: var(--text); }
 .page-top { padding: 165px 0 62px; border-bottom: 1px solid var(--line); }
 .page-top h1 { max-width: 850px; margin: 17px 0 14px; font-size: 68px; line-height: 1.04; }
 .page-top .body-copy { max-width: 660px; margin-bottom: 0; }

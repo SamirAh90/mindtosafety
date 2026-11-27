@@ -35,12 +35,36 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 
 - Gjort emblemet mindre och anpassat företagstextens typsnitt och färger till resten av hemsidan.
 
+### Sökbarhet och sidfot – slutuppdatering
+
+- Förtydligat hur varje sida presenteras i sökresultat och när länkar delas.
+- Angett `https://mindtosafety.se/` som hemsidans huvudadress enligt önskemålet.
+- Förbättrat informationen som hjälper sökmotorer att förstå företaget, Johan och de sju tjänsterna. Uppdaterat sidöversikten för sökmotorer.
+- Lagt till ”Powered by DALADANA” med länk till `https://daladana.se/` längst ned på alla sidor, tillsammans med copyright och integritetslänken.
+- Kontrollerat sidfoten på mobil och dator.
+
 ### Städning och publicering
 
 - Rensat tillfälliga förhandsvisningar och bildkopior samt tagit bort bilden till den borttagna utbildningen ”Utmana ert arbetslag”.
 - Kontrollerat att alla kvarvarande bilder används och att hemsidans länkar fungerar.
 
-**Status:** Ändringarna är pushade till GitHub och publicerade på [hemsidan](https://samirah90.github.io/mindtosafety/) den 27 november 2026.
+**Status:** Tidigare ändringar är publicerade på [GitHub-versionen](https://samirah90.github.io/mindtosafety/). Slutuppdateringen med sökbarhet och DALADANA-länken är kontrollerad och förbereds för push. Domänen mindtosafety.se visar fortfarande en annan, äldre webbplats.
+
+## 2026-11-27 – SEO och DALADANA-länk i slutversionen
+
+- Uppdaterade sidtitlar och sökbeskrivningar för startsidan, ”Om oss”, tjänster, kontakt och integritet. Varje sida har en egen beskrivning.
+- Samordnade informationen som visas vid delning av länkar och behöll svenska som sidornas språk.
+- Använde `https://mindtosafety.se/` som huvudadress efter användarens uttryckliga besked. Kontrollen av domänen visade att den fortfarande har en separat, äldre webbplats; denna GitHub-push ändrar inte dess nuvarande webbhotell eller DNS.
+- Förtydligade företags- och sidinformationen för sökmotorer samt lade till Johans presentation och de sju aktuella tjänsterna. Inga omdömen, betyg eller nya meriter har lagts till.
+- Återskapade `robots.txt` med hänvisning till sidkartan och uppdaterade sidkartans ändringsdatum för de fem sidorna.
+- Rättade bildmåtten i sidornas beskrivningar så att de stämmer med de faktiska bilderna.
+- Lade till ”Powered by DALADANA” med länk till `https://daladana.se/` i sidfoten på samtliga fem sidor. Copyright och integritetslänken finns kvar.
+
+**Berörda filer:** `index.html`, `om-oss/index.html`, `tjanster/index.html`, `kontakt/index.html`, `integritet/index.html`, `styles.css`, `sitemap.xml`, `robots.txt` och `ANDRINGSJOURNAL.md`.
+
+**Kontroll:** Kontrollerade fem sidors unika titlar, beskrivningar, delningsuppgifter, strukturerade information, huvudrubriker, sidfot och 151 lokala hänvisningar. Sidkartan och `robots.txt` stämmer med den valda huvudadressen. Sidfoten granskades i Edge på dator (1440 px) och mobil (390 px), utan horisontell överströmning. Kontrollerade att de godkända sidtexterna är oförändrade utöver sidfotstillägget och rättade bildmått.
+
+**Status:** Kontrollerat lokalt och förberett för slutpush till GitHub.
 
 ## 2026-11-27 – Publicering klar och kontrollerad
 
