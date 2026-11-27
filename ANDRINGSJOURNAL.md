@@ -48,7 +48,7 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 - Rensat tillfälliga förhandsvisningar och bildkopior samt tagit bort bilden till den borttagna utbildningen ”Utmana ert arbetslag”.
 - Kontrollerat att alla kvarvarande bilder används och att hemsidans länkar fungerar.
 
-**Status:** Tidigare ändringar är publicerade på [GitHub-versionen](https://samirah90.github.io/mindtosafety/). Slutuppdateringen med sökbarhet och DALADANA-länken är kontrollerad och förbereds för push. Domänen mindtosafety.se visar fortfarande en annan, äldre webbplats.
+**Status:** Slutversionen med SEO-förbättringar och DALADANA-länken är pushad till GitHub och publicerad på [GitHub-versionen](https://samirah90.github.io/mindtosafety/). Samtliga fem sidor är kontrollerade. Den valda huvudadressen mindtosafety.se visar fortfarande en annan, äldre webbplats.
 
 ## 2026-11-27 – SEO och DALADANA-länk i slutversionen
 
@@ -64,7 +64,9 @@ Journalen dokumenterar genomförda ändringar och deras status. Nya poster lägg
 
 **Kontroll:** Kontrollerade fem sidors unika titlar, beskrivningar, delningsuppgifter, strukturerade information, huvudrubriker, sidfot och 151 lokala hänvisningar. Sidkartan och `robots.txt` stämmer med den valda huvudadressen. Sidfoten granskades i Edge på dator (1440 px) och mobil (390 px), utan horisontell överströmning. Kontrollerade att de godkända sidtexterna är oförändrade utöver sidfotstillägget och rättade bildmått.
 
-**Status:** Kontrollerat lokalt och förberett för slutpush till GitHub.
+**Publiceringskontroll:** Commit `d746ea6` pushades till GitHub och [publiceringskörningen](https://github.com/SamirAh90/mindtosafety/actions/runs/46007498454) lyckades. Kontrollerade därefter samtliga fem publicerade sidor: DALADANA-länken, SEO-informationen och huvudadresserna finns på plats. Även den publicerade sidkartan och `robots.txt` verifierades. Tillfälliga arbets- och förhandsvisningsfiler rensades.
+
+**Status:** Slutversionen är publicerad och verifierad på GitHub Pages. SEO-inställningarna använder mindtosafety.se enligt önskemålet; publicering på det separata webbhotellet för den domänen ingår inte i GitHub-pushen.
 
 ## 2026-11-27 – Publicering klar och kontrollerad
 
